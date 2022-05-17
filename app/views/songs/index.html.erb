@@ -1,0 +1,5 @@
+<% if !@all.empty? %>
+    <% @all.each do |song| %>
+        <a href="<%= song_path(song) %>"> <%= song.artist_name %> - <%= song.title %></a><br/>
+    <% end %>
+<% end %>
